@@ -64,12 +64,9 @@ $ sudo docker run -p 8502:8501 --name=pets -v "/home/example/pets/:/models/pets/
 
 In my case:
 ```
-$ docker run -p 8502:8501 --name=pets -v "C:/Users/Maria Grandury/Documents/AI-ML-
-DL/TensorFlow/TF and Flask - Tutorial/pets/:/models/pets/1" -e MODEL_NAME=pets tensorflow/serving
+$ docker run -p 8502:8501 --name=horse-vs-human -v "C:/Users/Maria Grandu
+ry/Documents/AI-ML-DL/Flask Web Apps/image-classification-web-app/saved_model/:/models/horse-vs-human/1" -e MODEL_NAME=horse-vs-human tensorflow/serving
 ```
-docker run -p 8502:8501 --name=horse-vs-human -v "C:/Users/Maria Grandu
-ry/Documents/AI-ML-DL/Flask Web Apps/image-classification-web-app/horse-vs-human/:/models/horse-vs-human/1" -e MODEL_NAME=horse-vs-human tensorflow/serving
-
 
 
 Please note if you use any other port, you will have to change the MODEL_URI in the app.py file accordingly.
