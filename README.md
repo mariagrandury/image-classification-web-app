@@ -3,11 +3,10 @@
 ## What's Included
 Folders and files:
 1. saved_model - TensorFlow SavedModel Directory
-2. static - Empty directory which will be used for storing images by the flask app
-3. templates - HTML templates
-4. app.py - Flask app
-5. overview.pdf - Project Overview
-6. requirements.txt - Libraries you need to install
+2. templates - HTML templates
+3. app.py - Flask app
+4. image-classification-model.ipynb - Jupyter Notebook where the model was trained
+5. requirements.txt - Libraries you need to install
 
 ## Environment
 I used python 3.7 and TensorFlow 2.1.0. 

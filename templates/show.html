@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <div class="container">
-    <h1>Predicted Class: {{ result.class_name }}</h1>
+  <div class="card center">
+    <h2>Predicted Class: {{ result.class_name }}</h2>
     <hr>
 
     <div>
       <img src="{{ result.image_path }}" class="img-rounded" width="400" height="auto">
     </div>
-    <a href="{{ url_for('index') }}" class="btn btn-default">Back</a>
+    <a href="{{ url_for('index') }}" class="btn">Back</a>
   </div>
 {% endblock %}

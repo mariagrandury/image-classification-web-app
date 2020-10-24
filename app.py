@@ -7,10 +7,8 @@ import numpy as np
 import tensorflow as tf
 
 from flask import Flask, request, render_template
-from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)
-Bootstrap(app)
 
 """
 Utility functions
@@ -39,7 +37,7 @@ def get_prediction(image_path):
 Constants
 """
 MODEL_URI = 'http://localhost:8502/v1/models/horse-vs-human:predict'
-OUTPUT_DIR = 'static'
+OUTPUT_DIR = 'static/uploaded_images'
 CLASSES = ['Horse', 'Human']
 SIZE = 300
 
